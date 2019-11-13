@@ -1,0 +1,19 @@
+{{titre}}
+
+<div>{{table |uppercase}} <br/>
+{{img}}
+<br/><ul [ngClass]="prix>100 && prix<200 ? 'c1' : 'c2' "><li>
+prix:{{prix}}</li>
+<li> <input type="checkbox" [checked]="verif()"/>Neuf
+</li>
+<li *ngIf="etat=='false'">
+    <button (click)="original(pp)" >PrixOriginal</button>
+    <input [(ngModel)]="pp"/>
+
+</li>
+</ul>
+</div>
+<select [(ngModel)]="nombre">
+    <option> neuf</option>
+    <option>occasion</option>
+</select>

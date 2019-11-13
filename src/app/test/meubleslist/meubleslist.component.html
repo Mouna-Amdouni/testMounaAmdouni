@@ -1,0 +1,5 @@
+<div *ngFor="let t of meubles; let i=index">
+    <app-meuble [table]="meubles[i].libelle" [img]="meubles[i].img" 
+    [prix]="meubles[i].prixttc" [etat]="meubles[i].neuf" [pp]="meubles[i].prixttc"></app-meuble>
+
+</div>
